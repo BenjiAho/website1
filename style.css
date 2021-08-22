@@ -1,0 +1,213 @@
+html{
+    width:100%;
+    
+}
+body{
+    background-color: rgb(32, 32, 32);
+  background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+  background-size: 10px 10px, 10px 10px, 10px 5px;
+  background-position: 0px 0px, 5px 5px, 0px 0px;
+    width:100%;
+    margin:0;
+}
+
+header{
+    background-color: rgb(77, 0, 87);
+}
+nav {
+    margin: 0;
+}
+nav ol li {
+    list-style: none;
+}
+
+.texte_ajout {
+    color: aqua;
+}
+.nav_bar a{
+    font-size: 20px;
+    color:#fff;
+    text-decoration: none;
+    
+}
+
+.nav_bar a:hover{
+    color:blueviolet;
+}
+.nav_bar ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:15px;
+    border: solid rgb(50, 0, 56);
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+    margin : 0 auto;
+}
+a:hover h1{
+
+    color: blueviolet;
+
+}
+
+a:link{
+    color:#fff;
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+    color: white;
+}
+
+#shop_picture{
+    margin-top: auto;
+    margin-bottom: 3em;
+}
+
+.img{
+    height:300px;
+    width:300px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 50%;
+    box-shadow: 0 15px 30px 1px rgba(0, 0, 0, 0.397)
+}
+
+main{
+    padding:30px;
+}
+
+.contain{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px; 
+    
+}
+
+.contain_catalogue{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+    color: beige;
+    box-shadow: 0 15px 30px 1px rgba(134, 132, 132, 0.397);
+	background: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 350px;
+	width: 700px;
+    
+}
+#texte_description{
+    
+    color: rgb(0, 0, 0);
+    position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+/* #texte_description div{
+    
+} */
+.contain:hover{
+    background-color: rgba(137, 43, 226, 0.322);
+    transition: all 0.5s ease-in;
+}
+
+footer p{
+    text-align: center;
+    color:#fff;
+    font-size: 15px;
+}
+
+footer{
+
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color: rgb(77, 0, 87);
+}
+/*BUTTON CSS STARTS HERE*/
+
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #809fff;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+.btn:hover{transform: translateY(-6px);
+	background: #1a66ff;}
+
+.btn span {
+	font-family: 'Farsan', cursive;
+	transition: transform 0.3s;
+	display: inline-block;
+  padding: 10px 20px;
+	font-size: 1.2em;
+	margin:0;
+	
+}
+.btn .price, .shopping-cart{
+	background: #333;
+	border: 0;
+	margin: 0;
+}
+
+.btn .price {
+	transform: translateX(-10%); padding-right: 15px;
+}
+
+.btn .shopping-cart {
+	transform: translateX(-100%);
+     position: absolute;
+	background: #333;
+	z-index: 1;
+     left: 0;
+     top: 0;
+     width: 90%;
+}
+
+.btn .buy {z-index: 3; font-weight: bolder;}
+
+.btn:hover .price {transform: translateX(-110%);}
+
+.btn:hover .shopping-cart {transform: translateX(50%);}
+
+/* BUTTON CSS ENDS HERE */
